@@ -132,8 +132,9 @@ a{
 }
 
 	 .jardim1{
-		width: 400px;
+		width: 450px;
 		height: 800px;
+		padding: 10px;
 	}	
 
 	.jardim .jardim1 img{
@@ -143,8 +144,9 @@ a{
 
 
 	.jardim .jardim2{
-		width: 400px;
+		width: 450px;
 		height: 800px;
+		padding: 10px;
 	}
 
 	.jardim .jardim2 img{
@@ -154,8 +156,9 @@ a{
 
 
 	.jardim .jardim3{
-		width: 400px;
+		width: 450px;
 		height: 800px;
+		padding: 10px;
 	}
 
 
@@ -166,8 +169,9 @@ a{
 
 
 	.jardim .jardim4{
-		width: 400px;
+		width: 450px;
 		height: 800px;
+		padding: 10px;
 	}
 
 
@@ -209,7 +213,7 @@ a{
 	 .orquidea1{
 		width: 450px;
 		height: 800px;
-		object-fit:cover;
+		padding: 10px;
 	}
 
 	.orquideas .orquidea1 img{
@@ -221,7 +225,7 @@ a{
 	.orquideas .orquidea2{
 		width: 450px;
 		height: 800px;
-		background-color: green;
+		padding: 10px;
 	}
 
 	.orquideas .orquidea2 img{
@@ -233,7 +237,7 @@ a{
 	.orquideas .orquidea3{
 		width: 450px;
 		height: 800px;
-		object-fit:cover;
+		padding: 10px;
 	}
 
 
@@ -246,6 +250,7 @@ a{
 	.orquideas .orquidea4{
 		width: 450px;
 		height: 800px;
+		padding: 10px;
 	}
 
 
@@ -260,7 +265,7 @@ a{
 
     .titflores{
     	background-color: #ccffcc;
-    	height: 10vh;
+    	height: 11vh;
     	padding-bottom: 25px;
     	padding-top: 25px;
     	padding-right: 10px;
@@ -292,7 +297,7 @@ a{
 	 .flor1{
 		width: 450px;
 		height: 800px;
-		object-fit:cover;
+		padding: 10px;
 	}
 
 	.flores .flor1 img{
@@ -304,7 +309,7 @@ a{
 	.flores .flor2{
 		width: 450px;
 		height: 800px;
-		background-color: green;
+		padding: 10px;
 	}
 
 	.flores .flor2 img{
@@ -316,7 +321,7 @@ a{
 	.flores .flor3{
 		width: 450px;
 		height: 800px;
-		object-fit:cover;
+		padding: 10px;
 	}
 
 
@@ -329,6 +334,7 @@ a{
 	.flores .flor4{
 		width: 450px;
 		height: 800px;
+		padding: 10px;
 	}
 
 
@@ -370,6 +376,7 @@ a{
     	font-size: 1em;
     	font-weight: lighter;
     	color: #666666;
+    	padding: 0 10px;
     }
 	
 
