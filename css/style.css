@@ -13,24 +13,62 @@ html, body{
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+	text-decoration: none;
+	list-style: none;
 	font-family: 'Montserrat', sans-serif;
 	/*overflow-x: hidden;*/
 }	
 
+/*Aqui começa menu alternativo*/
+
+nav {
+	background: #003300;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: rgba(255,255,255, .5);
+	transition: .5s;
+}
+
 /*Aqui começa o Header e menu*/
 
-header{
+/*nav{
 	display: flex;
 	align-items: center;
 	justify-content:space-around;
 	width: 100%;
 	height: 8vh;
-	background-color: #003300;
+	background-color:#003300;
 	color: #ffffff;
 }
 
 
-header > p{
+nav > p{
 	font-family: 'Alegreya', serif;
 	font-size: 2em;
 }
@@ -56,7 +94,25 @@ a{
     a:hover{
 	color: #000000;
 	background-color: rgba(255,255,255, .7);
-} 
+	transition: .5s;
+} */
+
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;	
+}
+
+#check {
+	display: none;
+
+}
+
 
 
 /*Aqui começa o Hero*/
