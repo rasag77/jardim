@@ -6,538 +6,594 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 :root{
-	--fonte-titulo:'Berkshire Swash', cursive;
+  --fonte-titulo:'Berkshire Swash', cursive;
+  --fonte-corpo: 'Montserrat', sans-serif;
+  --fonte-logo: 'Alegreya', serif;;
+
 }
 
-html, body{
-	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-	list-style: none;
-	font-family: 'Montserrat', sans-serif;
-	/*overflow-x: hidden;*/
-}	
-
-/*Aqui começa menu alternativo*/
-
-nav {
-	background: #003300;
-	height: 80px;
-	width: 100%;
-}
-label.logo {
-	color: white;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
-}
-nav ul {
-	float: right;
-	margin-right: 20px;
-}
-nav ul li {
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-nav ul li a {
-	color: white;
-	font-size: 17px;
-	padding: 7px 13px;
-	border-radius: 3px;
-	text-decoration:none;
-	text-transform: uppercase;
-}
-a.active, a:hover {
-	background: rgba(255,255,255, .5);
-	transition: .5s;
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-/*Aqui começa o Header e menu*/
+/*Aqui começa o menu*/
 
-/*nav{
-	display: flex;
-	align-items: center;
-	justify-content:space-around;
-	width: 100%;
-	height: 8vh;
-	background-color:#003300;
-	color: #ffffff;
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--fonte-corpo);
 }
 
-
-nav > p{
-	font-family: 'Alegreya', serif;
-	font-size: 2em;
+a:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
-
-ul{
-	list-style: none;
-	display: flex;
-	align-items: center;
+#logo {
+  font-size: 2.0rem;
+  font-weight: bold;
+  font-family: var(--fonte-logo);
 }
 
-li{
-	margin:  0 15px;
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #003300;
 }
 
-a{
-	text-decoration: none;
-	color: #ffffff;
-
-	padding:20px 0px;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
 }
 
-    a:hover{
-	color: #000000;
-	background-color: rgba(255,255,255, .7);
-	transition: .5s;
-} */
-
-
-.checkbtn{
-	font-size: 30px;
-	color: white;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer;
-	display: none;	
+#menu a {
+  display: block;
+  padding: 0.5rem;
 }
 
-#check {
-	display: none;
-
+#btn-mobile {
+  display: none;
 }
 
 
 
-/*Aqui começa o Hero*/
+/*Aqui começa os titulos responsivos*/
+
+@media (max-width: 570px){
+
+ #rosas, .titjardim{
+      background-color: #ccffcc;
+      height: 25vh;
+      padding-bottom: 40px;
+       /*display: flex;
+      justify-content: center;
+      align-items: center;*/
+    }
+
+    .titjardim, h1{
+      text-align: center;
+      margin: 0px;
+      padding-top: 25px;
+      padding-bottom: 15px;
+      color: #003300;
+      font-family:var(--fonte-titulo);
+      font-size: 2.0em;
+    }
+
+    .titjardim, h3{
+      font-size: 1em;
+      font-family: var(--fonte-corpo);
+    }
 
 
-	.background {
-		background-image: url("../imagens/imagem1B.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
-		position: relative;
-		width: 100%;
-		height:100vh;
-		
-	}
+        #orquideas, .titorquideas{
+      background-color: #ccffcc;
+      height: 16vh;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
 
-    	
-	.background .paragrafo{
-		position: absolute;
-		top: 40%;
-		left: 25%;
-		font-family: var(--fonte-titulo);
-		color: #ffffff;
-		font-size: max(2.0em , 1vw);
-		font-weight: bold;
-		text-align: center;
-	}
+  .titorquideas > h3{
+      text-align: center;
+      margin: 0px;
+      color: #003300;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 10px;
+    }
 
 
-/*Aqui começa a section jardim e rosas*/
+      #flores, .titflores{
+      background-color: #ccffcc;
+      height: 29vh;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      padding-right: 10px;
+      padding-left: 10px;
+      
+    }
+
+
+    #frutas, .titfruta{
+      background-color: #ccffcc;
+      height: 29vh;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      padding-right: 10px;
+      padding-left: 10px;
+      
+    }
+
+
+
+
+
+
+  .titflores > h3{
+      text-align: center;
+      margin: 0px;
+      color: #003300;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 10px;
+    } 
+
+}
+
+
+/*Aqui começa o menu responsivo*/
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #ccffcc;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    color: #003300;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #fff;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: #fff;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }  
+
+}
+
+/*Aqui começa o hero*/
+
+
+ .background {
+    background-image: url("../imagens/imagem1B.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height:100vh;    
+}
+
+
+.background .paragrafo{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-family: var(--fonte-titulo);
+    color: #ffffff;
+    font-size: max(2.0em , 1vw);
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  /*Aqui começa a section jardim e rosas*/
 
     .titjardim{
-    	background-color: #ccffcc;
-    	height: 15vh;
-    	padding-bottom: 50px;
-    	/*display: flex;
-    	justify-content: center;
-    	align-items: center;*/
+      background-color: #ccffcc;
+      height: 15vh;
+      padding-bottom: 50px;
+      /*display: flex;
+      justify-content: center;
+      align-items: center;*/
     }
 
     .titjardim > h1{
-    	text-align: center;
-    	margin: 0px;
-    	padding-top: 25px;
-    	padding-bottom: 15px;
-    	color: #003300;
-    	font-family:var(--fonte-titulo);
-    	font-size: 2.5em;
+      text-align: center;
+      margin: 0px;
+      padding-top: 25px;
+      padding-bottom: 15px;
+      color: #003300;
+      font-family:var(--fonte-titulo);
+      font-size: 2.5em;
     }
 
 
     .titjardim > h3{
-    	text-align: center;
-    	margin: 0px;
-    	color: #003300;
-    	/*font-family:var(--fonte-titulo);*/
-    	font-size: 1.5em;
-    	font-weight: lighter;
-    	padding: 10px;
+      text-align: center;
+      margin: 0px;
+      color: #003300;
+      /*font-family:var(--fonte-titulo);*/
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 10px;
     }
 
 
-    /*Aqui começa o section rosas*/
 
-	.jardim{
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100%;
-		background-color:#ccffcc ;
+     /*Aqui começa o section rosas*/
+
+  .jardim{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color:#ccffcc ;
 }
 
-	 .jardim1{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}	
+   .jardim1{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  } 
 
-	.jardim .jardim1 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
-
-
-	.jardim .jardim2{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
-
-	.jardim .jardim2 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .jardim .jardim1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.jardim .jardim3{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+  .jardim .jardim2{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
+
+  .jardim .jardim2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.jardim .jardim3 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .jardim .jardim3{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
 
-	.jardim .jardim4{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+  .jardim .jardim3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.jardim .jardim4 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .jardim .jardim4{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
-/*Aqui começa a section orquideas*/
 
-	.titorquideas{
-    	background-color: #ccffcc;
-    	height: 10vh;
-    	padding-bottom: 25px;
-    	padding-top: 25px;
-    	padding-right: 10px;
-    	padding-left: 10px;
+  .jardim .jardim4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
+
+
+  /*Aqui começa a section orquideas*/
+
+  .titorquideas{
+      background-color: #ccffcc;
+      height: 8vh;
+      padding-bottom: 15px;
+      padding-top: 25px;
+      padding-right: 10px;
+      padding-left: 10px;
     }
 
-	.titorquideas > h3{
-    	text-align: center;
-    	margin: 0px;
-    	color: #003300;
-    	font-size: 1.5em;
-    	font-weight: lighter;
-    	padding: 10px;
+  .titorquideas > h3{
+      text-align: center;
+      margin: 0px;
+      color: #003300;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 10px;
     }
 
 
     .orquideas{
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100%;
-		background-color:#ccffcc ;
-	}
-	
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color:#ccffcc ;
+  }
+  
 
-	 .orquidea1{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+   .orquidea1{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
-	.orquideas .orquidea1 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
-
-
-	.orquideas .orquidea2{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
-
-	.orquideas .orquidea2 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .orquideas .orquidea1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.orquideas .orquidea3{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+  .orquideas .orquidea2{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
+
+  .orquideas .orquidea2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.orquideas .orquidea3 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .orquideas .orquidea3{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
 
-	.orquideas .orquidea4{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+  .orquideas .orquidea3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.orquideas .orquidea4 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .orquideas .orquidea4{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
 
-/*Aqui começa a section flores*/
+  .orquideas .orquidea4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
+
+
+  /*Aqui começa a section flores*/
 
 
     .titflores{
-    	background-color: #ccffcc;
-    	height: 11vh;
-    	padding-bottom: 25px;
-    	padding-top: 25px;
-    	padding-right: 10px;
-    	padding-left: 10px;
-    	
+      background-color: #ccffcc;
+      height: 11vh;
+      padding-bottom: 50px;
+      padding-top: 15px;
+      padding-right: 10px;
+      padding-left: 10px;
+      
     }
 
-	.titflores > h3{
-    	text-align: center;
-    	margin: 0px;
-    	color: #003300;
-    	font-size: 1.5em;
-    	font-weight: lighter;
-    	padding: 10px;
-    }	
+  .titflores > h3{
+      text-align: center;
+      margin: 0px;
+      color: #003300;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 10px;
+    } 
 
 
 
 
     .flores{
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100%;
-		background-color:#ccffcc ;
-	}
-	
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color:#ccffcc ;
+  }
+  
 
-	 .flor1{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+   .flor1{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
-	.flores .flor1 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
-
-
-	.flores .flor2{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
-
-	.flores .flor2 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .flores .flor1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.flores .flor3{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+  .flores .flor2{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
+
+  .flores .flor2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.flores .flor3 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-	}
+  .flores .flor3{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
 
-	.flores .flor4{
-		width: 450px;
-		height: 800px;
-		padding: 10px;
-	}
+  .flores .flor3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+  }
 
 
-	.flores .flor4 img{
-		width: 100%;
-		height: 100%;
-		border-radius: 13px;
-		border: 2px solid black;
-
-	}	
+  .flores .flor4{
+    width: 450px;
+    height: 800px;
+    padding: 10px;
+  }
 
 
+  .flores .flor4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
 
-/*Aqui começa a section sobre nós*/	
+  } 
+
+/*Aqui começa a section fruta*/ 
+
+.titfruta > h3{
+      text-align: center;
+      margin: 0px;
+      color: #003300;
+      font-size: 1.5em;
+      font-weight: lighter;
+      padding: 30px;
+      background-color: #ccffcc;
+    }
+
+
+    .fruta{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color:#ccffcc ;
+  } 
+
+
+
+
+
+/*Aqui começa a section sobre nós*/ 
 
     .sobre{
-    	background-color: #ffffff;
-    	width: 100%;
+      background-color: #ffffff;
+      width: 100%;
     }
 
     .sobre > h3{
-    	text-align: center;
-    	font-size: 1em;
-    	font-weight: lighter;
-    	color: #808080;
-    	margin-bottom: 10px;
+      text-align: center;
+      font-size: 1em;
+      font-weight: lighter;
+      color: #808080;
+      margin-bottom: 10px;
     }
 
 
     .sobre > h2{
-    	text-align: center;
-    	font-size: 2em;
-    	font-weight: bold;
-    	color: #000000;
-    	margin-top: 0px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: #000000;
+      margin-top: 0px;
     }
 
 
     .sobre > p{
-    	text-align: center;
-    	font-size: 1em;
-    	font-weight: lighter;
-    	color: #666666;
-    	padding: 0 10px;
+      text-align: center;
+      font-size: 1em;
+      font-weight: lighter;
+      color: #666666;
+      padding: 0 10px;
     }
-	
+  
 
-	.sobre img{
-		display: block;
-    	margin:0 auto;
-    	border: 2px solid black;
-    }
-
-
-    @media(max-width: 660px){
-
-    	.titjardim{
-    	background-color: #ccffcc;
-    	height: 22vh;
-    	padding-bottom: 50px;
-    	/*display: flex;
-    	justify-content: center;
-    	align-items: center;*/
+  .sobre img{
+    display: block;
+      margin:0 auto;
+      border: 2px solid black;
     }
 
-    .titjardim > h1{
-    	text-align: center;
-    	margin: 0px;
-    	padding-top: 25px;
-    	padding-bottom: 15px;
-    	color: #003300;
-    	font-family:var(--fonte-titulo);
-    	font-size: 2.5em;
+    footer > p{
+      text-align: center;
     }
-
-
-        .titorquideas{
-    	background-color: #ccffcc;
-    	height: 16vh;
-    	padding-bottom: 25px;
-    	padding-top: 25px;
-    	padding-right: 10px;
-    	padding-left: 10px;
-    }
-
-	.titorquideas > h3{
-    	text-align: center;
-    	margin: 0px;
-    	color: #003300;
-    	font-size: 1.5em;
-    	font-weight: lighter;
-    	padding: 10px;
-    }
-
-
-    	.titflores{
-    	background-color: #ccffcc;
-    	height: 29vh;
-    	padding-bottom: 25px;
-    	padding-top: 25px;
-    	padding-right: 10px;
-    	padding-left: 10px;
-    	
-    }
-
-	.titflores > h3{
-    	text-align: center;
-    	margin: 0px;
-    	color: #003300;
-    	font-size: 1.5em;
-    	font-weight: lighter;
-    	padding: 10px;
-    }	
-
-
-
-
-    }
-	
-
-
-
-
-
-
 
